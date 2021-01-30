@@ -1,167 +1,62 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
 }
 
-body {
-    font-family: 'Times New Roman', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-}
-h1 {
-font-size: 64px;
-text-align: center;
-padding: 10px;
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
 }
 
-h2 {
-    font-size: 32px;
-    text-shadow: 4px 4px 2px #808080; 
-}
-
-p {
-    font-size: 24px;
-    padding-top: 15px;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    max-width: 100%;
-}
-
-div {
-    min-height: 150px;
+/*Style the images*/
+img{
+    height: 200px;
+    width:auto;
+    border: 3px solid blue;
     padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-#red{
-    background-color: #ff0000;
-    text-align: right;
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
 }
 
-#blue{
-    background-color: #0000ff;
-    text-align: left;
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
 }
 
-#yellow{
-    background-color: #ffff00;
-    text-align: right;
-    
+/*Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer{
+	border: 2px solid grey;
+	margin: 10px 0;
 }
 
-#yellow p{
-    color: #000000;
-}
-#yellow h2{
-    color: #000000;
-    text-shadow: 4px 4px 2px #c7e2c7; 
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	background-color: #ECFF4D;
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
 }
 
-#green{
-    background-color: #008000;
-    text-align: left;
-}
 
-footer p{
-    text-align: center;
-    padding-bottom: 10px;
-    padding-right: 10px;
-}
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-	display:block;
-}
+/*Added this so the links stay the same color*/
+a:visited{color:#0000FF}
 
-nav ul {
-    list-style:none;
-}
 
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
 }
